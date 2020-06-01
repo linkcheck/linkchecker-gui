@@ -44,7 +44,7 @@ myname = "Bastian Kleineidam"
 myemail = "bastian.kleineidam@web.de"
 
 data_files = []  # XXX
-#    ('share/linkchecker', ['doc/html/lccollection.qhc', 'doc/html/lcdoc.qch'])
+#    ('share/linkchecker-gui', ['doc/html/lccollection.qhc', 'doc/html/lcdoc.qch'])
 # ]
 
 if os.name == 'posix':

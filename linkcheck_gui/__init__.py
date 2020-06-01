@@ -53,8 +53,8 @@ from linkcheck.parser import parse_text
 from linkcheck import url as urlutil
 
 
-DocBaseUrl = "qthelp://bfk.app.linkchecker/doc/"
-RegistryBase = "Bastian"
+DocBaseUrl = "qthelp://linkchecker.app.linkchecker-gui/doc/"
+RegistryBase = "LinkCheckerGUI"
 Status = enum('idle', 'checking')
 
 MaxMessageLength = 60
