@@ -14,12 +14,12 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 def format (color, style=''):
     """Return a QTextCharFormat with the given attributes."""
-    format = QtGui.QTextCharFormat()
+    format = QtWidgets.QTextCharFormat()
     format.setForeground(getattr(QtCore.Qt, color))
     if 'bold' in style:
         format.setFontWeight(QtGui.QFont.Bold)
@@ -28,7 +28,7 @@ def format (color, style=''):
     return format
 
 
-class Highlighter (QtGui.QSyntaxHighlighter):
+class Highlighter (QtWidgets.QSyntaxHighlighter):
     """Base class for all highlighters."""
 
     def __init__ (self, document):
