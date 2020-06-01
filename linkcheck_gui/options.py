@@ -55,7 +55,7 @@ class LinkCheckerOptions(QtWidgets.QDialog, Ui_Options):
             self.user_config,
             self.user_config_button,
             self.user_config_filename,
-            self.user_config_writable,
+            self.user_config_writable
         )
 
     def edit_user_config(self):

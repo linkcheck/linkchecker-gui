@@ -45,7 +45,7 @@ from linkcheck import (
     LinkCheckerError,
     i18n,
     httputil,
-    logconf,
+    logconf
 )
 from linkcheck.containers import enum
 from linkcheck.parser import parse_text
@@ -258,7 +258,7 @@ class LinkCheckerMain(QtWidgets.QMainWindow, Ui_MainWindow):
         self.config["logger"] = self.config.logger_new(
             SignalLogger.LoggerName,
             signal=self.log_url_signal,
-            stats=self.log_stats_signal,
+            stats=self.log_stats_signal
         )
         self.config["status"] = True
         self.config["status_wait_seconds"] = 2
@@ -424,7 +424,7 @@ Version 2 or later.
 <a href="%(donateurl)s">donate</a>. Thanks!
 </center></qt>"""
             )
-            % d,
+            % d
         )
 
     @QtCore.pyqtSlot()
@@ -561,7 +561,7 @@ Version 2 or later.
             self.view_source(
                 urlitem.url_data.parent_url,
                 urlitem.url_data.line,
-                urlitem.url_data.column,
+                urlitem.url_data.column
             )
 
     def view_source(self, url, line, col):

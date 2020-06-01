@@ -74,7 +74,7 @@ class UpdateDialog(QtWidgets.QMessageBox):
                     version=version,
                     app=configuration.AppName,
                     url=url,
-                    currentversion=configuration.Version,
+                    currentversion=configuration.Version
                 )
         else:
             # value is an error message or None if UpdateThread has been

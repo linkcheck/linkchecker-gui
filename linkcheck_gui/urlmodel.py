@@ -75,7 +75,7 @@ class UrlItem:
             parent = "%s%s%s" % (
                 self.url_data.parent_url,
                 (_(", line %d") % self.url_data.line),
-                (_(", col %d") % self.url_data.column),
+                (_(", col %d") % self.url_data.column)
             )
         else:
             parent = ""
@@ -88,7 +88,7 @@ class UrlItem:
             # Name
             self.url_data.name,
             # Result
-            result,
+            result
         ]
 
     def init_tooltips(self):

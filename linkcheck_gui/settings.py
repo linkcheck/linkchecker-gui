@@ -89,7 +89,7 @@ class Settings:
             verbose=None,
             recursionlevel=None,
             warninglines=None,
-            ignorelines=None,
+            ignorelines=None
         )
         self.settings.beginGroup('output')
         for key in ("debug", "verbose"):

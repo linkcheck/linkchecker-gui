@@ -111,7 +111,7 @@ class Editor(QtWidgets.QPlainTextEdit):
                     self.lineNumberArea.width(),
                     self.fontMetrics().height(),
                     QtCore.Qt.AlignRight,
-                    number,
+                    number
                 )
             block = next(block)
             top = bottom

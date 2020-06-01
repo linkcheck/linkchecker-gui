@@ -65,7 +65,7 @@ class XmlHighlighter(Highlighter):
                 'keyword': format('darkBlue'),
                 'attribute': format('darkGreen'),
                 'comment': format('darkYellow'),
-                'string': format('darkMagenta'),
+                'string': format('darkMagenta')
             }
         )
         # keywords
@@ -95,7 +95,7 @@ class IniHighlighter(Highlighter):
             {
                 'section': format('darkBlue'),
                 'property': format('darkGreen'),
-                'comment': format('darkYellow'),
+                'comment': format('darkYellow')
             }
         )
         self.addRule(r'\b\[[a-zA-Z0-9_]+\]\b', 'section')

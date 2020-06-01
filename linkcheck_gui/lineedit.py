@@ -104,7 +104,7 @@ class LineEdit(QtWidgets.QLineEdit):
                 QtCore.Qt.Key_Home,
                 QtCore.Qt.Key_End,
                 QtCore.Qt.Key_PageUp,
-                QtCore.Qt.Key_PageDown,
+                QtCore.Qt.Key_PageDown
             ):
                 pass
             else:
@@ -127,7 +127,7 @@ class LineEdit(QtWidgets.QLineEdit):
         padding_left = self.listButton.sizeHint().width() + frameWidth + 1
         style = "QLineEdit { padding-left: %dpx; padding-right: %dpx } " % (
             padding_left,
-            padding_right,
+            padding_right
         )
         self.setStyleSheet(style)
         # minimum width
